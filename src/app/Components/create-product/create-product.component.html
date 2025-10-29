@@ -1,0 +1,13 @@
+<form>
+  <label for="ProductName">Product Name:</label>
+  <input type="text" id="ProductName" (input)="validateInputs($event, 'name')" placeholder="Enter product name..."/>
+  <br/>
+
+  <label for="Description">Price:</label>
+  <input type="text" id="Description" (input)="validateInputs($event, 'description')" placeholder="Enter price..."/>
+  <br />
+  <div>
+    <button type="submit" [disabled]="!isSubmit">Submit</button>
+  </div>
+
+</form>
