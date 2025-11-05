@@ -1,0 +1,13 @@
+<p>ngif-ngfor works!</p>
+
+<div>
+  <input type="checkbox" [(ngModel)]="userIsActive" />
+</div>
+
+<div id="user-is-active" *ngIf="userIsActive">
+  <p>User is active:)</p>
+</div>
+
+<div id="user-is-not-active" *ngIf="!userIsActive">
+  <p>User is not active:(</p>
+</div>
