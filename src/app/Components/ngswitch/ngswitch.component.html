@@ -1,0 +1,15 @@
+<p>ngswitch works!</p>
+
+<select name="userStatus" [(ngModel)]="userStatus">
+  <option *ngFor="let us of userStatusList" value="{{us}}">{{us}}</option>
+</select>
+
+<div>
+  <p [ngSwitch]="userStatus">User is
+    <i *ngSwitchCase="'active'">Active</i>
+    <i *ngSwitchCase="'inactive'">Inactive</i>
+    <i *ngSwitchCase="'ban'">Ban</i>
+    <i *ngSwitchCase="'deleted'">Deleted</i>
+    <i *ngSwitchDefault>Unknown</i>
+  </p>
+</div>

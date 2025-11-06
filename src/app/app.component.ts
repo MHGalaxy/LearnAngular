@@ -5,12 +5,13 @@ import {ProductDetailsComponent} from './Components/product-details/product-deta
 import {CreateProductComponent} from './Components/create-product/create-product.component';
 import {TowWayBindingComponent} from './Components/tow-way-binding/tow-way-binding.component';
 import {NgifNgforComponent} from './Components/ngif-ngfor/ngif-ngfor.component';
+import {NgswitchComponent} from './Components/ngswitch/ngswitch.component';
 
 //decorator factory
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent],
+  imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent, NgswitchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
