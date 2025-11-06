@@ -1,0 +1,12 @@
+<p>ngclass works!</p>
+
+<div>
+  <p [ngClass]="firstClass">First Row</p>
+  <p [ngClass]="secondClass">Second Row</p>
+
+  <!--  use array classes:-->
+  <p [ngClass]="['text-warning', 'text-center']">Third Row</p>
+
+  <!--  use condition:-->
+  <p [ngClass]="{'text-info text-center':isActiveForthClass}">Third Row</p>
+</div>
