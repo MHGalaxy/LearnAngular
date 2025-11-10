@@ -8,5 +8,12 @@
   <p [ngClass]="['text-warning', 'text-center']">Third Row</p>
 
   <!--  use condition:-->
-  <p [ngClass]="{'text-info text-center':isActiveForthClass}">Third Row</p>
+  <p [ngClass]="{'text-info text-center':isActiveForthClass}">Fourth Row</p>
+</div>
+<div>
+  <p [ngStyle]="{'background-color': 'red'}">First Style</p>
+  <p [ngStyle]="{'backgroundColor': 'blue'}">Second Style</p>
+  <p [ngStyle]="{backgroundColor: 'yellow', textAlign : 'center'}">Third Style</p>
+  <p [ngStyle]="fourthStyle">Fourth Style</p>
+  <p [ngStyle]="{backgroundColor: isDanger ? 'red' : 'green'}">Fifth Style</p>
 </div>
