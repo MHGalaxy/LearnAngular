@@ -8,12 +8,13 @@ import {NgifNgforComponent} from './Components/ngif-ngfor/ngif-ngfor.component';
 import {NgswitchComponent} from './Components/ngswitch/ngswitch.component';
 import {ContactUsComponent} from './Components/contact-us/contact-us.component';
 import {NgclassComponent} from './Components/ngclass/ngclass.component';
+import {NgcontentComponent} from './Components/ngcontent/ngcontent.component';
 
 //decorator factory
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent, NgswitchComponent, ContactUsComponent, NgclassComponent],
+  imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent, NgswitchComponent, ContactUsComponent, NgclassComponent, NgcontentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
