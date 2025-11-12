@@ -1,0 +1,17 @@
+<p>ngtemplate works!</p>
+
+<input type="checkbox" name="userIsActive" [(ngModel)]="userIsActive">
+
+<div class="alert alert-success" *ngIf="userIsActive  else UserIsNotActive">
+  <p>User is active</p>
+</div>
+
+<!--<div class="alert alert-danger" *ngIf="!userIsActive">-->
+<!--  <p>User is not active</p>-->
+<!--</div>-->
+
+<ng-template #UserIsNotActive>
+  <div class="alert alert-danger">
+    <p>User is not active</p>
+  </div>
+</ng-template>
