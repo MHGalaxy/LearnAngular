@@ -1,0 +1,18 @@
+<p>blog-list works!</p>
+
+<div class="container">
+  <div class="row" *ngIf="blogs">
+    <div class="col-md-4 mb-2" *ngFor="let blog of blogs">
+      <div class="card">
+        <div class="card-header">{{blog.title}}</div>
+        <div class="card-body">
+          {{blog.description}}
+          <br/>
+          <app-blog-details [blogId]="blog.id"></app-blog-details>
+        </div>
+        <div class="card-footer">{{blog.author}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
