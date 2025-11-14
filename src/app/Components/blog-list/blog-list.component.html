@@ -8,9 +8,9 @@
         <div class="card-body">
           {{blog.description}}
           <br/>
-          <app-blog-details [blogId]="blog.id"></app-blog-details>
+          <app-blog-details [blogId]="blog.id" (blogDetails)="receiveData($event)"></app-blog-details>
         </div>
-        <div class="card-footer">{{blog.author}}</div>
+        <div class="card-footer text-muted">{{blog.author}}</div>
       </div>
     </div>
   </div>

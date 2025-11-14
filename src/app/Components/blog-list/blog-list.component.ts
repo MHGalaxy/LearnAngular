@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {BlogDto} from '../../Dtos/blog/blog.dto';
-import {getBlogDetailByBlogId, getBlogs} from '../../dbs/blog.db';
+import {BlogDetailDto, BlogDto} from '../../Dtos/blog/blog.dto';
+import {getBlogs} from '../../dbs/blog.db';
 import {NgForOf, NgIf} from '@angular/common';
 import {BlogDetailsComponent} from '../blog-details/blog-details.component';
 
@@ -20,5 +20,10 @@ export class BlogListComponent {
 
   constructor() {
     this.blogs = getBlogs();
+  }
+
+  receiveData(e: BlogDetailDto[]){
+    //alert(JSON.stringify(e));
+    console.log(e);
   }
 }
