@@ -45,7 +45,21 @@ const courses: CourseDto[] = [
   }
 ];
 
+type NewCourseDto = Omit<CourseDto, 'id'>;
 
 export function getCourses(): CourseDto[] {
   return courses;
+}
+
+export function addCourse(newCourse: NewCourseDto){
+  const nextId = courses.length > 0
+    ? Math.max(...courses.map(c => c.id)) + 1
+    : 1;
+
+  const courseToAdd: CourseDto = {
+    id: nextId,
+    ...newCourse
+  };
+
+  courses.push(courseToAdd);
 }
