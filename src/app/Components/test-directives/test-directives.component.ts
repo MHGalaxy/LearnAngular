@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {ParaHighlighterDirective} from '../../Directives/para-highlighter.directive';
 import {DynamicColorDirective} from '../../Directives/dynamic-color.directive';
 import {MinLengthErrorDirective} from '../../Directives/min-length-error.directive';
+import {FontSizeDirective} from '../../Directives/font-size.directive';
 
 @Component({
   selector: 'app-test-directives',
@@ -9,7 +10,8 @@ import {MinLengthErrorDirective} from '../../Directives/min-length-error.directi
   imports: [
     ParaHighlighterDirective,
     DynamicColorDirective,
-    MinLengthErrorDirective
+    MinLengthErrorDirective,
+    FontSizeDirective
   ],
   templateUrl: './test-directives.component.html',
   styleUrl: './test-directives.component.css'

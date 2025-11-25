@@ -1,4 +1,4 @@
-import {Directive, HostBinding, HostListener} from '@angular/core';
+import {Directive, ElementRef, HostBinding, HostListener} from '@angular/core';
 
 @Directive({
   selector: '[paraHighlighter]',
@@ -6,7 +6,9 @@ import {Directive, HostBinding, HostListener} from '@angular/core';
 })
 export class ParaHighlighterDirective {
 
-  constructor() { }
+  constructor(el: ElementRef) {
+    el.nativeElement.style.color = 'red';
+  }
 
   @HostBinding('style.backgroundColor') bgColor = '';
 
