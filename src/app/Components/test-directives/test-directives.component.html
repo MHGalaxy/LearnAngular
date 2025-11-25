@@ -11,3 +11,5 @@
   [minLengthError]="5"
   (input)="onNameInput($event)"
 />
+<br/>
+<p *ngElse="isActive" class="alert alert-danger">User is not active</p>

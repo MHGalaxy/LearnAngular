@@ -3,6 +3,7 @@ import {ParaHighlighterDirective} from '../../Directives/para-highlighter.direct
 import {DynamicColorDirective} from '../../Directives/dynamic-color.directive';
 import {MinLengthErrorDirective} from '../../Directives/min-length-error.directive';
 import {FontSizeDirective} from '../../Directives/font-size.directive';
+import {NgElseDirective} from '../../Directives/ng-else.directive';
 
 @Component({
   selector: 'app-test-directives',
@@ -11,12 +12,15 @@ import {FontSizeDirective} from '../../Directives/font-size.directive';
     ParaHighlighterDirective,
     DynamicColorDirective,
     MinLengthErrorDirective,
-    FontSizeDirective
+    FontSizeDirective,
+    NgElseDirective
   ],
   templateUrl: './test-directives.component.html',
   styleUrl: './test-directives.component.css'
 })
 export class TestDirectivesComponent {
+
+  isActive = false;
 
   protected name = "name";
 
