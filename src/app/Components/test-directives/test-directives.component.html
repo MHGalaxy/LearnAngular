@@ -1,0 +1,11 @@
+<p>test-directives works!</p>
+
+<h3 paraHighlighter>Test highlight directive hover</h3>
+<input class="form-control" autoFocus />
+<p [dynamicColor]="'blue'">Text in blue</p>
+<input
+  class="form-control shadow-none"
+  [value]="name"
+  [minLengthError]="5"
+  (input)="onNameInput($event)"
+/>
