@@ -16,12 +16,13 @@ import {CreateCourseComponent} from './Components/create-course/create-course.co
 import {ViewchildComponent} from './Components/viewchild/viewchild.component';
 import {TestDirectivesComponent} from './Components/test-directives/test-directives.component';
 import {LifecycleComponent} from "./Components/lifecycle/lifecycle.component";
+import {UserListComponent} from './Components/user-list/user-list.component';
 
 //decorator factory
 @Component({
   selector: 'app-root',
   standalone: true,
-    imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent, NgswitchComponent, ContactUsComponent, NgclassComponent, NgcontentComponent, NgtemplateComponent, BlogListComponent, CourseListComponent, CreateCourseComponent, ViewchildComponent, TestDirectivesComponent, LifecycleComponent],
+  imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent, NgswitchComponent, ContactUsComponent, NgclassComponent, NgcontentComponent, NgtemplateComponent, BlogListComponent, CourseListComponent, CreateCourseComponent, ViewchildComponent, TestDirectivesComponent, LifecycleComponent, UserListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
