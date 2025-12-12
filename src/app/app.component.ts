@@ -17,12 +17,13 @@ import {ViewchildComponent} from './Components/viewchild/viewchild.component';
 import {TestDirectivesComponent} from './Components/test-directives/test-directives.component';
 import {LifecycleComponent} from "./Components/lifecycle/lifecycle.component";
 import {UserListComponent} from './Components/user-list/user-list.component';
+import {TestPipeComponent} from './Components/test-pipe/test-pipe.component';
 
 //decorator factory
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent, NgswitchComponent, ContactUsComponent, NgclassComponent, NgcontentComponent, NgtemplateComponent, BlogListComponent, CourseListComponent, CreateCourseComponent, ViewchildComponent, TestDirectivesComponent, LifecycleComponent, UserListComponent],
+  imports: [RouterOutlet, ProductListComponent, ProductDetailsComponent, CreateProductComponent, TowWayBindingComponent, NgifNgforComponent, NgswitchComponent, ContactUsComponent, NgclassComponent, NgcontentComponent, NgtemplateComponent, BlogListComponent, CourseListComponent, CreateCourseComponent, ViewchildComponent, TestDirectivesComponent, LifecycleComponent, UserListComponent, TestPipeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
